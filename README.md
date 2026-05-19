@@ -1,6 +1,6 @@
 # 🎥 Sakila SQL Mastery: Querying a Real-World DVD Rental Database
 
-> *From film catalogues to overdue rentals — 13 business-driven SQL queries across a fully normalized relational database.*
+> *From film catalogues to overdue rentals — 12 business-driven SQL queries across a fully normalized relational database.*
 
 ---
 
