@@ -35,7 +35,9 @@ USE sakila;
 
 ## 🗺️ Entity Relationship Diagram (ERD)
 
-![Sakila ERD](images/sakila_erd.png)
+<img width="1200" height="900" alt="Sakila_ERD" src="https://github.com/user-attachments/assets/2ca0feab-17e9-4ce6-a20e-ab7c157cfb96" />
+
+
 
 The Sakila schema contains **16 tables** with clearly defined primary keys, foreign key relationships, and junction tables for many-to-many associations (e.g. `film_actor`, `film_category`). The ERD above was generated using **MySQL Workbench's** reverse-engineering tool directly from the live database.
 
@@ -51,23 +53,6 @@ The Sakila schema contains **16 tables** with clearly defined primary keys, fore
 
 ---
 
-## 📂 Repository Structure
-
-```
-sakila-sql-mastery/
-│
-├── queries/
-│   └── Sakila_MySQL_Queries.sql        ← All 13 annotated queries
-│
-├── database/
-│   └── sakila-db.zip                   ← Optional: local copy of Sakila DB
-│                                           (schema + data SQL files)
-│
-├── images/
-│   └── sakila_erd.png                  ← MySQL Workbench ERD
-│
-└── README.md
-```
 
 > **Note on the database zip:** The `database/` folder contains a local copy for convenience. The canonical and always-up-to-date source is the [official MySQL download](https://downloads.mysql.com/docs/sakila-db.zip).
 
@@ -190,33 +175,6 @@ Computes the due date dynamically from `rental_date + rental_duration`, then mea
 | `LIMIT` for top-N results | Q5, Q6 |
 
 ---
-
-## ❓ ERD Format Recommendation
-
-> **What format is best for a GitHub repository?**
-
-For a GitHub repo, **PNG is the ideal format** for your ERD — and here is why:
-
-| Format | GitHub Rendering | File Size | Editability | Recommendation |
-|---|---|---|---|---|
-| **PNG** | ✅ Renders inline in README | Small–Medium | No | ✅ **Best for README display** |
-| **SVG** | ✅ Renders inline, infinitely scalable | Very Small | Yes (XML) | ✅ Best if exportable from Workbench |
-| **PDF** | ❌ Does not render inline | Medium | No | Good for download only |
-| **MWB** | ❌ Binary, not renderable | Large | Yes (Workbench only) | Include as source file |
-
-**Recommended approach for this repo:**
-- `images/sakila_erd.png` — displayed inline in the README (what you have now ✅)
-- Optionally: `images/sakila_erd.mwb` — the raw Workbench model file, so anyone can open and edit it
-
-To export SVG from Workbench: *File → Export → Export as SVG* — SVG would be the upgrade path since it stays crisp at any zoom level on GitHub.
-
----
-
-## 👤 Author
-
-**Caleb Chisom Chike**
-Structural Engineer | Data Analytics Practitioner
-📍 Lagos, Nigeria
 
 *This project was completed as part of a structured SQL for Data Analysis course, applying relational database querying to a real-world normalized schema.*
 
